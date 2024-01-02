@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#CD3B0C</color>
+    <color name="button_grey_disabled">#5E5D5D</color>
+    <color name="button_orange_selected">#9C553E</color>
+    <color name="button_orange_normal">#FF7043</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

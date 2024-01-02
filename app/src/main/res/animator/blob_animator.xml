@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:propertyName="pathData"
+        android:duration="3000"
+        android:valueFrom="M50,100 Q25,25 75,50 Q125,-25 150,50 Q175,125 125,150 Q75,175 50,100"
+        android:valueTo="M50,100 Q75,0 125,50 Q175,100 125,150 Q75,200 50,100"
+        android:valueType="pathType"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+
+    <objectAnimator
+        android:propertyName="fillColor"
+        android:duration="3000"
+        android:valueFrom="#FF5722"
+        android:valueTo="#3F51B5"
+        android:valueType="colorType"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+</set>

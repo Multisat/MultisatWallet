@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="319dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo_activity_login"
+            android:layout_width="88dp"
+            android:layout_height="78dp"
+            android:contentDescription="@string/app_slogan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/app_name_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vector_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/app_name_login"
+            style="@style/AutoSizeTextStyle"
+            android:layout_width="203dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="352dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/password_login"
+            style="@style/AutoSizeTextStyle"
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:text="@string/enter_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/input_password_login"
+            style="@style/AutoSizeTextStyle"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/password_input"
+            android:ems="10"
+            android:hint="@string/password"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/password_login"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/password_login"
+            app:layout_constraintTop_toBottomOf="@+id/password_login" />
+
+        <Button
+            android:id="@+id/password_confirm_button_login"
+            android:layout_width="170dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/confirm_button_states"
+            android:text="@string/confirm"
+            app:layout_constraintEnd_toEndOf="@+id/input_password_login"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/input_password_login"
+            app:layout_constraintTop_toBottomOf="@+id/input_password_login" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Multisat Wallet</string>
+    <string name="app_slogan">Access to multiple the world of DeFi from a single wallet</string>
+    <string name="app_version">Version 1.10.0 (io.multisat.wallet)</string>
+    <string name="create_account">Create Account</string>
+    <string name="import_account">Import Account</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="secret_phrase">Secret Phrase</string>
+</resources>

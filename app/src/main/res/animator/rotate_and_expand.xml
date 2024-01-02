@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+
+    <!-- Rotate Animation -->
+    <objectAnimator
+        android:propertyName="rotation"
+        android:duration="3000"
+        android:valueFrom="0"
+        android:valueTo="360"
+        android:interpolator="@android:anim/linear_interpolator"/>
+
+    <!-- Scale X Animation -->
+    <objectAnimator
+        android:propertyName="scaleX"
+        android:duration="3000"
+        android:valueFrom="0.1"
+        android:valueTo="1"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+
+    <!-- Scale Y Animation -->
+    <objectAnimator
+        android:propertyName="scaleY"
+        android:duration="3000"
+        android:valueFrom="0.1"
+        android:valueTo="1"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+</set>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".ImportAccountActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="319dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo_activity_import_account"
+            android:layout_width="88dp"
+            android:layout_height="78dp"
+            android:contentDescription="@string/app_slogan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/app_name_import_account"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vector_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/app_name_import_account"
+            style="@style/AutoSizeTextStyle"
+            android:layout_width="203dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="407dp"
+        android:layout_height="487dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <Button
+            android:id="@+id/password_confirm_button_create_account"
+            android:layout_width="170dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/confirm_button_states"
+            android:text="@string/confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_password_create_account" />
+
+        <TextView
+            android:id="@+id/create_account_text"
+            style="@style/AutoSizeTextStyle"
+            android:layout_width="156dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/import_account"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/password_create_account"
+            style="@style/AutoSizeTextStyle"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints="password"
+            android:background="@drawable/password_input"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSecretPharseImportAccount" />
+
+        <EditText
+            android:id="@+id/confirm_password_create_account"
+            style="@style/AutoSizeTextStyle"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints="password"
+            android:background="@drawable/password_input"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_create_account" />
+
+        <EditText
+            android:id="@+id/editTextSecretPharseImportAccount"
+            style="@style/AutoSizeTextStyle"
+            android:layout_width="323dp"
+            android:layout_height="121dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/password_input"
+            android:ems="10"
+            android:hint="@string/secret_phrase"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_account_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
